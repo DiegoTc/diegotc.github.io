@@ -7,7 +7,7 @@ define('FROM_EMAIL', '');
 // Recipient's e-mail. To this e-mail messages will be sent.
 // e.g.: john@example.com
 // multiple recipients e.g.: john@example.com, andy@example.com
-define('TO_EMAIL', 'john@example.com');
+define('TO_EMAIL', 'organizacion@inmufest.com');
 
 /**
  * Function for sending messages. Checks input fields, prepares message and sends it.
@@ -70,9 +70,8 @@ function sendMessage() {
      * It can be customizable in any way you like.
      */
     $title = 'Vanilla Contact Form - New Message from '.$contact_name;
-    $message = 'Hey,'."\n\n"
-        .'You\'ve received new message from your website. Check details below:'."\n\n"
-        .'Sender\'s IP address: '.getIp()."\n"
+    $message = 'Hola,'."\n\n"
+        .'Usted ha recibido un nuevo mensaje del sitio web  INMUFESTSPS \n\n'
         .'Subject: '.$contact_subject."\n"
         .'Name: '.$contact_name."\n"
         .'E-mail: '.$contact_email."\n"
